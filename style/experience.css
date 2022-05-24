@@ -1,0 +1,55 @@
+/*experience*/
+#experience {
+    padding: 4.5vh 4.5vw;
+}
+
+#experience-header {
+    margin-top: 15vh;
+}
+
+#experience-item {
+    display: flex;
+    gap: 2vw;
+    padding: 0 13vw;
+}
+
+#experience-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#experience-item h1 {
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+
+#experience-item h1 span{
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+#experience-item h2 span{
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+#experience-item h2{
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+#experience-item p span{
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+#experience-item p{
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+#experience-item i {
+    font-size: 5vw;
+    color: #00b682;
+}

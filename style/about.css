@@ -1,0 +1,149 @@
+/*about*/
+#about {
+    padding: 4.5vh 4.5vw;
+}
+
+#about-info {
+    display: flex;
+}
+
+/*profile-picture*/
+#pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3vw;
+    border: 1px solid #00b682;
+}
+
+#profile-picture img {
+    width: 16.2vw;
+    height: auto;
+}
+
+#profile-picture figcaption {
+    margin-top: 4vh;
+    width: 17.4vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#profile-picture:hover #pic-container {
+    cursor: pointer;
+    transition: 0.3s all ease;
+    background-color: #00b682;
+}
+
+#profile-picture:hover figcaption {
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: #00b682;
+}
+
+/*personal data*/
+#personal-data {
+    padding-left: 2vw;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-data-element {
+    display: flex;
+    margin-bottom: 7vh;
+    align-items: center;
+    gap: 1vw;
+}
+
+.personal-data-element p{
+    margin-bottom: 0.5vh;
+}
+
+.personal-data-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b682;
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.personal-data-item-container i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.personal-data-item-container:hover i {
+    transition: 0.1s all ease;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+/*social profiles*/
+#social-profiles {
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-left: 2vw;
+}
+
+#social-profiles p {
+    margin-right: 1.2vw;
+}
+
+#social-profiles i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid gray;
+    width: 2vw;
+    height: 2vw;
+    margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+    transition: 0.3s all ease-in;
+}
+
+#social-profiles i:hover {
+    color: white;
+    border: none;
+    width: 3vw;
+    height: 3vw;
+    margin: 0;
+    cursor: pointer;
+}
+
+#social-profiles :nth-child(2):hover {
+    background-color: #3b5998;
+}
+
+#social-profiles :nth-child(3):hover {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+}
+
+#social-profiles :nth-child(4):hover {
+    background-color: #0e76a8;
+}
+
+#social-profiles :nth-child(5):hover {
+    background-color: #171515;
+}
+
+/*objective*/
+#objective strong {
+    color: #00b682cb;
+}
+
+#objective p {
+    padding: 2vw;
+    line-height: 2vw;
+    color: grey;
+}
+
+
+

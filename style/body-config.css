@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*useful elements*/
+.header {
+    justify-content: center;
+    display: flex;
+}
+
+.line {
+    width: 50vw;
+}
+
+.top {
+    height: 3.2vh; 
+}
+
+.bottom {
+    border-top: 1px solid rgba(84, 84, 84, 0.385);
+    height: 3.2vh; 
+}
+
+.title {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1vh 2vw;
+    border: 2px solid #00b682;
+    margin-bottom: 12vh;
+    width: fit-content;
+}
+
+/*body*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*side-bar*/
+#side-bar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #2f3742;
+    height: 100vh;
+    width: 16.6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8vw;
+    text-align: center;
+}
+
+#background-logo {
+    color: #00b682;
+    text-shadow: 3px 3px 0px black;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 16.6vw;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.95vw;
+    font-weight: 600;
+}
+
+.navbar-itens {
+    padding: 1vw 0 1vw 3vw;
+    text-shadow: 2px 2px 3px black;
+}
+
+.navbar-itens:hover {
+    transition: 500ms all ease-out;
+    padding-left: 1.8vw;
+    border-left: 1.2vw solid #00b682;
+    color: #00b682;
+    cursor: pointer;
+}
+
+#copyright {
+    margin: 1vw;
+    text-align: center;
+    font-style: italic;
+    color: #00b682;
+    font-weight: 400;
+    gap: 0.8vh;
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+#copyright-description {
+    color: rgba(255, 255, 255, 0.713);
+}
+
+#copyright span{
+    font-weight: 600;
+    color: #00b682;
+}
+
+/*main*/
+#main {
+    width: 100;
+    padding-left: 16.6vw;
+}

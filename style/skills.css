@@ -1,0 +1,162 @@
+/*skills*/
+#skills {
+    padding: 4.5vh 4.5vw;
+}
+
+/*Hard skills*/
+#hard-skills {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 0 5vw;
+}
+
+#hard-skills h3{
+    color: rgb(26, 31, 56);
+    font-weight: 500;
+    margin-bottom: 3.5vh;
+    text-align: center;
+}
+
+.hard-graph {
+    display: flex;
+}
+
+.hard-graph-element {
+    height: 5vh;
+    width: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vh;
+    padding: 0 1vw;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    font-weight: 700;
+}
+
+.complement {
+    height: 5vh;
+    background-color: rgba(128, 128, 128, 0.397);
+    flex: 0 1 3000px;
+}
+
+#html-graph {
+    background-color: rgb(228, 77, 38);
+    width: 30vw;
+    flex-shrink: 0;
+}
+
+#css-graph {
+    background-color: rgb(38, 77, 228);
+    width: 24vw;
+    flex-shrink: 0;
+}
+
+#git-graph {
+    background-color: #e8de2d;
+    width: 12vw;
+    flex-shrink: 0;
+}
+
+/*language*/
+#language {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vw 5vw 0;
+}
+
+#language h3{
+    text-transform: uppercase;
+    color: rgb(26, 31, 56);
+    font-weight: 500;
+    margin-bottom: 4.5vh;
+    text-align: center;
+}
+
+.language-bar {
+    position: relative;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.language-item :nth-child(2) {
+    font-weight: 700;
+}
+
+#language-progress {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#portuguese-progress, #spanish-progress, #english-progress {
+    width: 9.6vw;
+    height: 9.6vw;
+}
+
+.language-item circle {
+    fill: none;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 380;
+    stroke-dashoffset: 380;
+}
+
+.language-item:hover {
+    cursor: pointer;
+}
+
+.language-item:hover circle {
+    transition: 0.5s all ease;
+    stroke-width: 5;
+}
+
+#portuguese-progress :nth-child(1), #spanish-progress :nth-child(1), #english-progress :nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: rgba(128, 128, 128, 0.45);
+}
+
+#portuguese-progress :nth-child(2) {
+    stroke-dashoffset: calc(380 - (380*89)/100);
+    stroke: #00b682;
+} 
+
+#spanish-progress :nth-child(2) {
+    stroke-dashoffset: calc(380 - (380*20)/100);
+    stroke: #00b682;
+} 
+
+#english-progress :nth-child(2) {
+    stroke-dashoffset: calc(380 - (380*16)/100);
+    stroke: #00b682;
+} 
+
+.language-bar :nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.537);
+    transition: 0.5s all ease;
+}
+
+.language-item:hover .language-bar :nth-child(2){
+    color: #00b682;
+    font-size: 3vw;
+}
